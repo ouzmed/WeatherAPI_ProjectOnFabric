@@ -1,0 +1,37 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "name": "Web1",
+        "type": "WebActivity",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "method": "GET",
+          "headers": {
+            "accept": "'application/json'"
+          },
+          "relativeUrl": {
+            "value": "@https://api.weatherapi.com/v1/current.json?q=paris&key=variables('key')",
+            "type": "Expression"
+          }
+        },
+        "externalReferences": {
+          "connection": "17d02f4e-5a7d-45bb-aca5-dfa91594768d"
+        }
+      }
+    ],
+    "variables": {
+      "key": {
+        "type": "String",
+        "defaultValue": "1967578b90254ad29e594056242910"
+      }
+    }
+  }
+}
