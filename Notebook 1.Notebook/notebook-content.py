@@ -77,7 +77,7 @@ display(df_dt)
 df_cleaned = df_dt.withColumnRenamed("name","city")\
                 .withColumnRenamed("temp_c", "temperature")\
                 .withColumnRenamed("windchill_c", "felt")
-display(df_named)              
+display(df_cleaned)              
 
 # METADATA ********************
 

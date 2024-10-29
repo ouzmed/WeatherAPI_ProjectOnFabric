@@ -75,3 +75,16 @@ display(df_agg)
 # META   "language": "python",
 # META   "language_group": "synapse_pyspark"
 # META }
+
+# CELL ********************
+
+df_idf.write.format("delta").mode("overwrite").saveAsTable("lakehouse_meteo.idf_meteo")
+df_MED.write.format("delta").mode("overwrite").saveAsTable("lakehouse_meteo.med_meteo")
+df_agg.write.format("delta").mode("overwrite").saveAsTable("lakehouse_meteo.temp_avg_per_region")
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
