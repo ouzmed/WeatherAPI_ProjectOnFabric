@@ -17,11 +17,11 @@
 
 # MARKDOWN ********************
 
-# #### Preparing Silver Table
+# #### Preparing datamart tables
 
 # CELL ********************
 
-from pyspark.sql.functions import col, cast, when
+from pyspark.sql.functions import col, mean, round
 
 # METADATA ********************
 
@@ -32,7 +32,7 @@ from pyspark.sql.functions import col, cast, when
 
 # CELL ********************
 
-df = spark.sql("SELECT * FROM lakehouse_meteo.bronze_tbl")
+df = spark.sql("SELECT * FROM lakehouse_meteo.silver_tbl")
 display(df)
 
 # METADATA ********************
@@ -44,24 +44,8 @@ display(df)
 
 # CELL ********************
 
-
-df.printSchema()
-
-# METADATA ********************
-
-# META {
-# META   "language": "python",
-# META   "language_group": "synapse_pyspark"
-# META }
-
-# CELL ********************
-
-# cleaning the data type of the columns and changing the content of the column is_day
-
-df_dt = df.withColumn("last_updated", col("last_updated").cast("date"))\
-          .withColumn("is_day", when(col("is_day") == 1, "day").otherwise("night"))
-
-display(df_dt)
+df_idf = df.filter(col("region") == 'Ile-de-France').select("city", "temperature", "felt","is_day","last_updated")
+df_MED = df.where(col("region") == 'Provence-Alpes-Cote d\'Azur').select("city", "temperature", "felt","is_day","last_updated")
 
 # METADATA ********************
 
@@ -72,12 +56,7 @@ display(df_dt)
 
 # CELL ********************
 
-# rename the columns with a significant names:
-
-df_cleaned = df_dt.withColumnRenamed("name","city")\
-                .withColumnRenamed("temp_c", "temperature")\
-                .withColumnRenamed("windchill_c", "felt")
-display(df_cleaned)              
+df_agg = df.groupBy("region").agg(round(mean("temperature"),2).alias("temp_avg"))
 
 # METADATA ********************
 
@@ -86,13 +65,22 @@ display(df_cleaned)
 # META   "language_group": "synapse_pyspark"
 # META }
 
-# MARKDOWN ********************
+# CELL ********************
 
-# #### Saving the refined dataframe into a silver table in the lakehouse 
+display(df_agg)
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
 
 # CELL ********************
 
-df_cleaned.write.format("delta").mode("overwrite").saveAsTable("lakehouse_meteo.silver_tbl")
+df_idf.write.format("delta").mode("overwrite").saveAsTable("lakehouse_meteo.idf_meteo")
+df_MED.write.format("delta").mode("overwrite").saveAsTable("lakehouse_meteo.med_meteo")
+df_agg.write.format("delta").mode("overwrite").saveAsTable("lakehouse_meteo.temp_avg_per_region")
 
 # METADATA ********************
 

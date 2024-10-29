@@ -2,29 +2,66 @@
   "properties": {
     "activities": [
       {
-        "name": "Web1",
-        "type": "WebActivity",
-        "dependsOn": [],
+        "type": "TridentNotebook",
+        "typeProperties": {
+          "notebookId": "ad6db3f2-b58e-44ec-b6fd-68b6aaf96454",
+          "workspaceId": "00000000-0000-0000-0000-000000000000"
+        },
         "policy": {
           "timeout": "0.12:00:00",
           "retry": 0,
           "retryIntervalInSeconds": 30,
-          "secureOutput": false,
-          "secureInput": false
+          "secureInput": false,
+          "secureOutput": false
         },
+        "name": "BronzeLayer",
+        "dependsOn": []
+      },
+      {
+        "type": "TridentNotebook",
         "typeProperties": {
-          "method": "GET",
-          "headers": {
-            "accept": "'application/json'"
-          },
-          "relativeUrl": {
-            "value": "@https://api.weatherapi.com/v1/current.json?q=paris&key=variables('key')",
-            "type": "Expression"
-          }
+          "notebookId": "c3db6752-e97f-4247-b24f-04e4d43a02a9",
+          "workspaceId": "00000000-0000-0000-0000-000000000000"
         },
-        "externalReferences": {
-          "connection": "17d02f4e-5a7d-45bb-aca5-dfa91594768d"
-        }
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "SilverLayer",
+        "dependsOn": [
+          {
+            "activity": "BronzeLayer",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "TridentNotebook",
+        "typeProperties": {
+          "notebookId": "d0276f3a-e212-42a3-be6c-73aa101d78af",
+          "workspaceId": "00000000-0000-0000-0000-000000000000"
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "GoldLayer",
+        "dependsOn": [
+          {
+            "activity": "SilverLayer",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
       }
     ],
     "variables": {
