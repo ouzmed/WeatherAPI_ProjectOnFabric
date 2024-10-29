@@ -97,7 +97,7 @@ print(example)
 # CELL ********************
 
 
-cities = ['Paris', 'Toulouse', 'Lyon', 'Bourdeaux', 'Nice', 'Lille', 'Strasbourg','Marseille']
+cities = ['Paris', 'Toulouse', 'Lyon', 'Bourdeaux', 'Nice', 'Lille', 'Strasbourg','Marseille', 'Nantes']
 
 name=[]
 region=[]
@@ -192,6 +192,17 @@ df = spark.createDataFrame(data=data, schema=schema)
 # Display the dataframe
 
 display(df)
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
+df.write.format("delta").mode("overwrite").saveAsTable("Lakehouse_meteo.bronze_tbl")
 
 # METADATA ********************
 
