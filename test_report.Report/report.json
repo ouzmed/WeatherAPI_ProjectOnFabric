@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.59\",\"type\":2}},\"activeSectionIndex\":2,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.59\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -37,49 +37,58 @@
           "z": 0.00
         },
         {
-          "config": "{\"name\":\"0a3572bb304312a62ddc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":934.2820663238897,\"y\":0,\"z\":5,\"width\":346.2921425860105,\"height\":142.75716898443702,\"tabOrder\":5}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(med_meteo.city)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"med_meteo\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"city\"}},\"Function\":5},\"Name\":\"Min(med_meteo.city)\",\"NativeReferenceName\":\"Count of city\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"city\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"0a3572bb304312a62ddc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":934.2820663238897,\"y\":0,\"z\":5000,\"width\":183.74685116808723,\"height\":142.75716898443702,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(med_meteo.city)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"med_meteo\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"city\"}},\"Function\":5},\"Name\":\"Min(med_meteo.city)\",\"NativeReferenceName\":\"Count of city\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"city\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 142.76,
-          "width": 346.29,
+          "width": 183.75,
           "x": 934.28,
           "y": 0.00,
-          "z": 5.00
+          "z": 5000.00
         },
         {
-          "config": "{\"name\":\"9ba1a34b2e710c4c0ba9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.89406121674316,\"y\":539.9330549708409,\"z\":1,\"width\":538.5196176541633,\"height\":162.54529141792332,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"med_meteo.city\"},{\"queryRef\":\"Sum(med_meteo.felt)\"},{\"queryRef\":\"med_meteo.is_day\"},{\"queryRef\":\"med_meteo.last_updated\"},{\"queryRef\":\"Sum(med_meteo.temperature)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"med_meteo\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"city\"},\"Name\":\"med_meteo.city\",\"NativeReferenceName\":\"city\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"felt\"}},\"Function\":0},\"Name\":\"Sum(med_meteo.felt)\",\"NativeReferenceName\":\"Sum of felt\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"is_day\"},\"Name\":\"med_meteo.is_day\",\"NativeReferenceName\":\"is_day\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"last_updated\"},\"Name\":\"med_meteo.last_updated\",\"NativeReferenceName\":\"last_updated\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"temperature\"}},\"Function\":0},\"Name\":\"Sum(med_meteo.temperature)\",\"NativeReferenceName\":\"Sum of temperature\"}]},\"drillFilterOtherVisuals\":true}}",
+          "config": "{\"name\":\"9ba1a34b2e710c4c0ba9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.89406121674316,\"y\":539.9330549708409,\"z\":1000,\"width\":538.5196176541633,\"height\":162.54529141792332,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"med_meteo.city\"},{\"queryRef\":\"Sum(med_meteo.felt)\"},{\"queryRef\":\"med_meteo.is_day\"},{\"queryRef\":\"med_meteo.last_updated\"},{\"queryRef\":\"Sum(med_meteo.temperature)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"med_meteo\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"city\"},\"Name\":\"med_meteo.city\",\"NativeReferenceName\":\"city\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"felt\"}},\"Function\":0},\"Name\":\"Sum(med_meteo.felt)\",\"NativeReferenceName\":\"Sum of felt\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"is_day\"},\"Name\":\"med_meteo.is_day\",\"NativeReferenceName\":\"is_day\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"last_updated\"},\"Name\":\"med_meteo.last_updated\",\"NativeReferenceName\":\"last_updated\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"temperature\"}},\"Function\":0},\"Name\":\"Sum(med_meteo.temperature)\",\"NativeReferenceName\":\"Sum of temperature\"}]},\"drillFilterOtherVisuals\":true}}",
           "filters": "[]",
           "height": 162.55,
           "width": 538.52,
           "x": 9.89,
           "y": 539.93,
-          "z": 1.00
+          "z": 1000.00
         },
         {
-          "config": "{\"name\":\"b8e24bde5334ca8a141c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":948.4164394906657,\"y\":216.2559094516719,\"z\":3,\"width\":220.49622140170467,\"height\":128.62279581766106,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"med_meteo.city\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(med_meteo.felt)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"med_meteo\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"city\"},\"Name\":\"med_meteo.city\",\"NativeReferenceName\":\"city\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"felt\"}},\"Function\":0},\"Name\":\"Sum(med_meteo.felt)\",\"NativeReferenceName\":\"Sum of felt\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"felt\"}},\"Function\":0}}}]},\"autoSelectVisualType\":false,\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"b4cd15850a50d0a843a2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1181.6335967424686,\"y\":14.13437316677594,\"z\":5001,\"width\":86.21967631733324,\"height\":90.45998826736601,\"tabOrder\":5001}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Acceuil'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'b4800711d7a54b081a20'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 90.46,
+          "width": 86.22,
+          "x": 1181.63,
+          "y": 14.13,
+          "z": 5001.00
+        },
+        {
+          "config": "{\"name\":\"b8e24bde5334ca8a141c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":897.5326960902722,\"y\":251.59184236861174,\"z\":3000,\"width\":220.49622140170467,\"height\":128.62279581766106,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"med_meteo.city\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(med_meteo.felt)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"med_meteo\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"city\"},\"Name\":\"med_meteo.city\",\"NativeReferenceName\":\"city\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"felt\"}},\"Function\":0},\"Name\":\"Sum(med_meteo.felt)\",\"NativeReferenceName\":\"Sum of felt\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"felt\"}},\"Function\":0}}}]},\"autoSelectVisualType\":false,\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 128.62,
           "width": 220.50,
-          "x": 948.42,
-          "y": 216.26,
-          "z": 3.00
+          "x": 897.53,
+          "y": 251.59,
+          "z": 3000.00
         },
         {
-          "config": "{\"name\":\"d2c8c15ea8700a427ee0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":251.59184236861174,\"z\":4,\"width\":554.0674281376168,\"height\":128.62279581766106,\"tabOrder\":4}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"med_meteo.city\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(med_meteo.temperature)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"med_meteo\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"city\"},\"Name\":\"med_meteo.city\",\"NativeReferenceName\":\"city\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"temperature\"}},\"Function\":0},\"Name\":\"Sum(med_meteo.temperature)\",\"NativeReferenceName\":\"Sum of temperature\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"temperature\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"d2c8c15ea8700a427ee0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":251.59184236861174,\"z\":4000,\"width\":554.0674281376168,\"height\":128.62279581766106,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"med_meteo.city\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(med_meteo.temperature)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"med_meteo\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"city\"},\"Name\":\"med_meteo.city\",\"NativeReferenceName\":\"city\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"temperature\"}},\"Function\":0},\"Name\":\"Sum(med_meteo.temperature)\",\"NativeReferenceName\":\"Sum of temperature\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"temperature\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 128.62,
           "width": 554.07,
           "x": 0.00,
           "y": 251.59,
-          "z": 4.00
+          "z": 4000.00
         },
         {
-          "config": "{\"name\":\"dc36f6673804a49158b7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":568.2018013043928,\"y\":408.4833845198247,\"z\":2,\"width\":712.3724076055074,\"height\":310.9562096690707,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"med_meteo.city\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(med_meteo.temperature)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"med_meteo\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"city\"},\"Name\":\"med_meteo.city\",\"NativeReferenceName\":\"city\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"temperature\"}},\"Function\":0},\"Name\":\"Sum(med_meteo.temperature)\",\"NativeReferenceName\":\"Sum of temperature\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"temperature\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"dc36f6673804a49158b7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":568.2018013043928,\"y\":408.4833845198247,\"z\":2000,\"width\":712.3724076055074,\"height\":310.9562096690707,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"med_meteo.city\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(med_meteo.temperature)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"med_meteo\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"city\"},\"Name\":\"med_meteo.city\",\"NativeReferenceName\":\"city\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"temperature\"}},\"Function\":0},\"Name\":\"Sum(med_meteo.temperature)\",\"NativeReferenceName\":\"Sum of temperature\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"temperature\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 310.96,
           "width": 712.37,
           "x": 568.20,
           "y": 408.48,
-          "z": 2.00
+          "z": 2000.00
         }
       ],
       "width": 1280.00
@@ -94,31 +103,40 @@
       "ordinal": 1,
       "visualContainers": [
         {
-          "config": "{\"name\":\"907d37940d3bc71123a7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.89406121674316,\"y\":159.71841678456812,\"z\":2,\"width\":1194.354532592567,\"height\":151.23779288450257,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"idf_meteo.city\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(idf_meteo.temperature)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"idf_meteo\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"city\"},\"Name\":\"idf_meteo.city\",\"NativeReferenceName\":\"city\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"temperature\"}},\"Function\":0},\"Name\":\"Sum(idf_meteo.temperature)\",\"NativeReferenceName\":\"Sum of temperature\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"temperature\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"34a30d411b6b7ad283bb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1055.8376755581628,\"y\":661.488664205114,\"z\":3001,\"width\":148.41091825114736,\"height\":57.95092998378136,\"tabOrder\":3001}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Acceuil'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 57.95,
+          "width": 148.41,
+          "x": 1055.84,
+          "y": 661.49,
+          "z": 3001.00
+        },
+        {
+          "config": "{\"name\":\"907d37940d3bc71123a7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.89406121674316,\"y\":159.71841678456812,\"z\":2000,\"width\":1194.354532592567,\"height\":151.23779288450257,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"idf_meteo.city\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(idf_meteo.temperature)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"idf_meteo\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"city\"},\"Name\":\"idf_meteo.city\",\"NativeReferenceName\":\"city\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"temperature\"}},\"Function\":0},\"Name\":\"Sum(idf_meteo.temperature)\",\"NativeReferenceName\":\"Sum of temperature\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"temperature\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 151.24,
           "width": 1194.35,
           "x": 9.89,
           "y": 159.72,
-          "z": 2.00
+          "z": 2000.00
         },
         {
-          "config": "{\"name\":\"92faec304178bdebd811\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1017.6748680078678,\"y\":0,\"z\":1,\"width\":186.5737258014424,\"height\":120.14217191759549,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(idf_meteo.temperature)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"idf_meteo\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"temperature\"}},\"Function\":0},\"Name\":\"Sum(idf_meteo.temperature)\",\"NativeReferenceName\":\"Sum of temperature\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"temperature\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"92faec304178bdebd811\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1017.6748680078678,\"y\":0,\"z\":1000,\"width\":186.5737258014424,\"height\":120.14217191759549,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(idf_meteo.temperature)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"idf_meteo\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"temperature\"}},\"Function\":0},\"Name\":\"Sum(idf_meteo.temperature)\",\"NativeReferenceName\":\"Sum of temperature\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"temperature\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 120.14,
           "width": 186.57,
           "x": 1017.67,
           "y": 0.00,
-          "z": 1.00
+          "z": 1000.00
         },
         {
-          "config": "{\"name\":\"b64628e0cd3b04c273e7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":370.32057696952967,\"y\":360.4265157527865,\"z\":3,\"width\":486.22243693709237,\"height\":149.82435556782497,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"idf_meteo.city\"},{\"queryRef\":\"Sum(idf_meteo.felt)\"},{\"queryRef\":\"idf_meteo.is_day\"},{\"queryRef\":\"idf_meteo.last_updated\"},{\"queryRef\":\"Sum(idf_meteo.temperature)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"idf_meteo\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"city\"},\"Name\":\"idf_meteo.city\",\"NativeReferenceName\":\"city\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"felt\"}},\"Function\":0},\"Name\":\"Sum(idf_meteo.felt)\",\"NativeReferenceName\":\"Sum of felt\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"is_day\"},\"Name\":\"idf_meteo.is_day\",\"NativeReferenceName\":\"is_day\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"last_updated\"},\"Name\":\"idf_meteo.last_updated\",\"NativeReferenceName\":\"last_updated\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"temperature\"}},\"Function\":0},\"Name\":\"Sum(idf_meteo.temperature)\",\"NativeReferenceName\":\"Sum of temperature\"}]},\"drillFilterOtherVisuals\":true}}",
+          "config": "{\"name\":\"b64628e0cd3b04c273e7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":370.32057696952967,\"y\":360.4265157527865,\"z\":3000,\"width\":486.22243693709237,\"height\":149.82435556782497,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"idf_meteo.city\"},{\"queryRef\":\"Sum(idf_meteo.felt)\"},{\"queryRef\":\"idf_meteo.is_day\"},{\"queryRef\":\"idf_meteo.last_updated\"},{\"queryRef\":\"Sum(idf_meteo.temperature)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"idf_meteo\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"city\"},\"Name\":\"idf_meteo.city\",\"NativeReferenceName\":\"city\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"felt\"}},\"Function\":0},\"Name\":\"Sum(idf_meteo.felt)\",\"NativeReferenceName\":\"Sum of felt\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"is_day\"},\"Name\":\"idf_meteo.is_day\",\"NativeReferenceName\":\"is_day\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"last_updated\"},\"Name\":\"idf_meteo.last_updated\",\"NativeReferenceName\":\"last_updated\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"temperature\"}},\"Function\":0},\"Name\":\"Sum(idf_meteo.temperature)\",\"NativeReferenceName\":\"Sum of temperature\"}]},\"drillFilterOtherVisuals\":true}}",
           "filters": "[]",
           "height": 149.82,
           "width": 486.22,
           "x": 370.32,
           "y": 360.43,
-          "z": 3.00
+          "z": 3000.00
         },
         {
           "config": "{\"name\":\"d4d0306f0cc2625573a5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":60.777804617136546,\"y\":24.028434383519098,\"z\":0,\"width\":159.71841678456812,\"height\":74.91217778391248,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"idf_meteo.city\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"i\",\"Entity\":\"idf_meteo\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"city\"},\"Name\":\"idf_meteo.city\",\"NativeReferenceName\":\"First city\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}]}}}",
@@ -141,49 +159,76 @@
       "name": "b4800711d7a54b081a20",
       "visualContainers": [
         {
-          "config": "{\"name\":\"0ce3f9656b68bec7b96d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":624.7392939714966,\"y\":359.0130784361089,\"z\":1,\"width\":655.8349149384037,\"height\":360.4265157527865,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"temp_avg_per_region.region\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(temp_avg_per_region.temp_avg)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"temp_avg_per_region\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"region\"},\"Name\":\"temp_avg_per_region.region\",\"NativeReferenceName\":\"region\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"temp_avg\"}},\"Function\":0},\"Name\":\"Sum(temp_avg_per_region.temp_avg)\",\"NativeReferenceName\":\"Sum of temp_avg\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"temp_avg\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"0ce3f9656b68bec7b96d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":511.6643086372891,\"y\":309.5427723523931,\"z\":1000,\"width\":534.2793057041306,\"height\":409.8968218365023,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"temp_avg_per_region.region\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(temp_avg_per_region.temp_avg)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"temp_avg_per_region\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"region\"},\"Name\":\"temp_avg_per_region.region\",\"NativeReferenceName\":\"region\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"temp_avg\"}},\"Function\":0},\"Name\":\"Sum(temp_avg_per_region.temp_avg)\",\"NativeReferenceName\":\"Sum of temp_avg\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"temp_avg\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
-          "height": 360.43,
-          "width": 655.83,
-          "x": 624.74,
-          "y": 359.01,
-          "z": 1.00
+          "height": 409.90,
+          "width": 534.28,
+          "x": 511.66,
+          "y": 309.54,
+          "z": 1000.00
         },
         {
-          "config": "{\"name\":\"643d4e8069194e6c8a5c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":781.6308361227095,\"y\":0,\"z\":2,\"width\":498.9433727871907,\"height\":146.9974809344698,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"temp_avg_per_region.region\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"temp_avg_per_region\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"region\"},\"Name\":\"temp_avg_per_region.region\",\"NativeReferenceName\":\"region\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"items\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}]}}}",
+          "config": "{\"name\":\"330c9eb8da0c31371c72\",\"layouts\":[{\"id\":0,\"position\":{\"x\":15.547810483453535,\"y\":131.44967045101626,\"z\":4003,\"width\":599.2974222712999,\"height\":49.47030608371579}}],\"singleVisual\":{\"visualType\":\"bookmarkNavigator\",\"drillFilterOtherVisuals\":true},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 49.47,
+          "width": 599.30,
+          "x": 15.55,
+          "y": 131.45,
+          "z": 4003.00
+        },
+        {
+          "config": "{\"name\":\"643d4e8069194e6c8a5c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":781.6308361227095,\"y\":0,\"z\":2000,\"width\":498.9433727871907,\"height\":146.9974809344698,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"temp_avg_per_region.region\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"temp_avg_per_region\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"region\"},\"Name\":\"temp_avg_per_region.region\",\"NativeReferenceName\":\"region\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"items\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}]}}}",
           "filters": "[]",
           "height": 147.00,
           "width": 498.94,
           "x": 781.63,
           "y": 0.00,
-          "z": 2.00
+          "z": 2000.00
         },
         {
-          "config": "{\"name\":\"746dd3335dc7ba293b75\",\"layouts\":[{\"id\":0,\"position\":{\"x\":490.46274888712514,\"y\":15.547810483453535,\"z\":4,\"width\":278.44715138548605,\"height\":115.90185996756271,\"tabOrder\":4}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(temp_avg_per_region.region)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"temp_avg_per_region\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"region\"}},\"Function\":2},\"Name\":\"Min(temp_avg_per_region.region)\",\"NativeReferenceName\":\"Count of region\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"region\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"746dd3335dc7ba293b75\",\"layouts\":[{\"id\":0,\"position\":{\"x\":490.46274888712514,\"y\":15.547810483453535,\"z\":4000,\"width\":278.44715138548605,\"height\":115.90185996756271,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(temp_avg_per_region.region)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"temp_avg_per_region\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"region\"}},\"Function\":2},\"Name\":\"Min(temp_avg_per_region.region)\",\"NativeReferenceName\":\"Count of region\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"region\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 115.90,
           "width": 278.45,
           "x": 490.46,
           "y": 15.55,
-          "z": 4.00
+          "z": 4000.00
         },
         {
-          "config": "{\"name\":\"7fe07349675b45b64025\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":3,\"width\":449.4730667034749,\"height\":146.9974809344698,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"temp_avg_per_region.temp_avg\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"temp_avg_per_region\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"temp_avg\"},\"Name\":\"temp_avg_per_region.temp_avg\",\"NativeReferenceName\":\"temp_avg\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}]}}}",
+          "config": "{\"name\":\"7fe07349675b45b64025\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":3000,\"width\":449.4730667034749,\"height\":146.9974809344698,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"temp_avg_per_region.temp_avg\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"temp_avg_per_region\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"temp_avg\"},\"Name\":\"temp_avg_per_region.temp_avg\",\"NativeReferenceName\":\"temp_avg\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}]}}}",
           "filters": "[]",
           "height": 147.00,
           "width": 449.47,
           "x": 0.00,
           "y": 0.00,
-          "z": 3.00
+          "z": 3000.00
         },
         {
-          "config": "{\"name\":\"cbdb6770b1a0421d8a2e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":236.0440318851582,\"z\":0,\"width\":501.7702474205459,\"height\":483.39556230373717,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"temp_avg_per_region.region\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(temp_avg_per_region.temp_avg)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"temp_avg_per_region\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"region\"},\"Name\":\"temp_avg_per_region.region\",\"NativeReferenceName\":\"region\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"temp_avg\"}},\"Function\":0},\"Name\":\"Sum(temp_avg_per_region.temp_avg)\",\"NativeReferenceName\":\"Sum of temp_avg\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"temp_avg\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"84f9c046400753e0aca5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1113.7886055419442,\"y\":289.7546499189068,\"z\":4005,\"width\":145.5840436177922,\"height\":70.6718658338797,\"tabOrder\":4002}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#99ECF0'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'MED'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'7492d7607042cd037aa0'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 70.67,
+          "width": 145.58,
+          "x": 1113.79,
+          "y": 289.75,
+          "z": 4005.00
+        },
+        {
+          "config": "{\"name\":\"cbdb6770b1a0421d8a2e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":289.7546499189068,\"z\":0,\"width\":474.9149384036716,\"height\":429.6849442699886,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"temp_avg_per_region.region\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(temp_avg_per_region.temp_avg)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"temp_avg_per_region\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"region\"},\"Name\":\"temp_avg_per_region.region\",\"NativeReferenceName\":\"region\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"temp_avg\"}},\"Function\":0},\"Name\":\"Sum(temp_avg_per_region.temp_avg)\",\"NativeReferenceName\":\"Sum of temp_avg\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"temp_avg\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[{\"expression\":{\"Arithmetic\":{\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"temp_avg_per_region\"}},\"Property\":\"temp_avg\"}},\"Function\":2}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"temp_avg_per_region\"}},\"Property\":\"temp_avg\"}},\"Function\":2}},\"Scope\":[]}},\"Operator\":3}},\"type\":\"Advanced\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
-          "height": 483.40,
-          "width": 501.77,
+          "height": 429.68,
+          "width": 474.91,
           "x": 0.00,
-          "y": 236.04,
+          "y": 289.75,
           "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"e8d60118650286db00e0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1113.7886055419442,\"y\":203.53497360157354,\"z\":4004,\"width\":145.5840436177922,\"height\":70.6718658338797,\"tabOrder\":4001}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'IDF'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'7492d7607042cd037aa0'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 70.67,
+          "width": 145.58,
+          "x": 1113.79,
+          "y": 203.53,
+          "z": 4004.00
         }
       ],
       "width": 1280.00
